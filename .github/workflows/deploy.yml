@@ -1,0 +1,13 @@
+name: Deploy Ghach API
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Railway / Render / Fly.io
+        run: echo "Deploy triggered"
